@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Validation</title>
+    <title>Scheduler</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,12 +11,9 @@
 
   <body>
     
-    
-  <%= flash[:alert] %>
-  <%= flash[:notice] %>
-    
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
+  
     <%= yield %>
-    
-    
   </body>
 </html>

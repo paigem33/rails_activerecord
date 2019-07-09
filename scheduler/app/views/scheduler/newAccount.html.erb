@@ -1,0 +1,21 @@
+<h1>Create an account!</h1>
+
+<% if @account.errors %>
+    <%= @account.errors.full_messages %>
+<% end %>
+
+<form action="/submit_account" method="POST">
+    <label for="first_name">First name:</label>
+    <input id="first_name" type="text" name="account[first_name]"></input>
+    
+    <label for="last_name">Last name:</label>
+    <input id="last_name" type="text" name="account[last_name]"></input>
+    
+    <label for="email">Email:</label>
+    <input id="email" type="text" name="account[email]"></input>
+    
+    <label for="phone_number">Phone number:</label>
+    <input id="phone_number" type="text" name="account[phone_number]"></input>
+    
+    <input type="submit" value="Create Account"></input>
+</form>
